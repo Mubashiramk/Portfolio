@@ -6,8 +6,18 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import * as animationData from "../../Assets/Lottie/animationAbout.json";
+import Lottie from "react-lottie";
 
 function About() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -31,7 +41,7 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <Lottie options={defaultOptions} height={500} width={500} />
           </Col>
         </Row>
         <h1 className="project-heading">

@@ -5,11 +5,11 @@ import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Mubashira_mk_resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink =
-  "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+// const resumeLink =
+//   "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -20,7 +20,7 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container fluid className="resume-section" style={{ height: "92vh" }}>
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -30,17 +30,27 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download Resume
           </Button>
         </Row>
+        {/* <iframe
+          src={pdf}
+          frameBorder="0"
+          border="none"
+          scrolling="auto"
+          height="1000px"
+          width="100%"
+        ></iframe> */}
+        {/* 
+        <embed src={pdf} width="800px" height="2100px" /> */}
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+        {/* <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-        </Row>
+        </Row> */}
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={pdf}
@@ -50,7 +60,7 @@ function ResumeNew() {
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   );

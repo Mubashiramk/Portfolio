@@ -12,6 +12,7 @@ import myTeamDashboard from "../../Assets/dashboard.png";
 import eventRegistration from "../../Assets/eventRegistration.png";
 import tracker from "../../Assets/tracker.png";
 import attendance from "../../Assets/attendance.png";
+import colorChanger from "../../Assets/colorChanger.png";
 
 function Projects() {
   return (
@@ -78,6 +79,17 @@ function Projects() {
               description="Developed and Deployed Fingerprint Attendance System for college. Fingerprint-based authentication and authorization system using Python (Django). Uploading the attendance in college official site RSMS."
               ghLink="https://github.com/Mubashiramk/AttendanceFingerprint"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={colorChanger}
+              isBlog={false}
+              title="Color Changer"
+              description="Developed color changing pattern using HTML, CSS, JAVASCRIPT."
+              ghLink="https://github.com/Mubashiramk/colorchanger"
+              demoLink="https://logocolorchange.web.app/"
             />
           </Col>
         </Row>

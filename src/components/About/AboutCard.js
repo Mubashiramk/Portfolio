@@ -28,7 +28,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>"Sharp the edge !" </p>
+          <p style={{ color: "rgb(30,80,100)" }}>"Sharp the edge !" </p>
           <footer className="blockquote-footer">Mubashira</footer>
         </blockquote>
       </Card.Body>
