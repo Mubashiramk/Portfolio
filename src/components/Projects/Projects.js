@@ -78,7 +78,6 @@ function Projects() {
               title="FingerPrint Attendance System"
               description="Developed and Deployed Fingerprint Attendance System for college. Fingerprint-based authentication and authorization system using Python (Django). Uploading the attendance in college official site RSMS."
               ghLink="https://github.com/Mubashiramk/AttendanceFingerprint"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
