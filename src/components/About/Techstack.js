@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
+import { FaHardHat } from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
@@ -14,6 +15,7 @@ import {
   SiFirebase,
   SiNextdotjs,
   SiBootstrap,
+  SiSolidity,
 } from "react-icons/si";
 
 function Techstack() {
@@ -27,6 +29,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSolidity />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaHardHat />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
